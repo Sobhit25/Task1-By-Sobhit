@@ -97,7 +97,7 @@ if (get(handles.menu,'Value') == 2)
         opts = setvaropts(opts, 2, "EmptyFieldRule", "auto");
 
   
-        dindia = readtable("daily_data.xls", opts, "UseExcel", false)
+        dindia = readtable("daily_data.xls", opts, "UseExcel", false);
 
         clear opts
         set(handles.confirm,'String',dindia.total_cases(127));
